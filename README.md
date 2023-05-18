@@ -34,4 +34,8 @@ s dilengkapi dengan skrip ya
 &nbsp;&nbsp;&nbsp;&nbsp; udevadm control --reload-rules
 &nbsp;&nbsp;&nbsp;&nbsp; systemctl daemon-reload
 <h4>6. Coba mount ke Direktori /media</h4>
-&nbsp;&nbsp;&nbsp;&nbsp; cd /media
+&nbsp;&nbsp;&nbsp;&nbsp; cd /media<br/><br/>
+
+<h6>Sumber: <br/>
+https://unix.stackexchange.com/questions/681379/usb-flash-drives-automatically-mounted-headless-computer<br/>
+https://www.youtube.com/watch?v=AGlzCyARGcQ</h6>
