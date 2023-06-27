@@ -31,7 +31,7 @@ s dilengkapi dengan skrip ya
 <h4>4. Duplikasi file ke direktori <u>/etc/udev/rules.d/</u></h4>
 &nbsp;&nbsp;&nbsp;&nbsp; cp 99-local.rules /etc/udev/rules.d/
 <h4>5. Restart Service tersebut</h4>
-&nbsp;&nbsp;&nbsp;&nbsp; udevadm control --reload-rules
+&nbsp;&nbsp;&nbsp;&nbsp; udevadm control --reload-rules<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; systemctl daemon-reload
 <h4>6. Coba mount ke Direktori /media</h4>
 &nbsp;&nbsp;&nbsp;&nbsp; cd /media<br/><br/>
