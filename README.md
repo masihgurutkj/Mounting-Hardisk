@@ -14,8 +14,8 @@
 <h2>B. Auto Mounting-Hardisk di Linux - STB B860H</h2>
 <h4>1. Buat Auto start  </h4>
 &nbsp;&nbsp;&nbsp;&nbsp; nano /etc/fstab <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  UUID="lihat_sesuai_ID_nya_yg_terlihat"  /usb/data   ntfs-3g  defaults,nofail  0 0   <i>### INSERT LAST ROW</i><br/>
-&nbsp;&nbsp;&nbsp;&nbsp; Ctrl+X | Y  <i>## simpan file</i><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  UUID="lihat_sesuai_ID_nya_yg_terlihat"  /usb/data   ntfs-3g  defaults,nofail  0 0  <br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>### Tambahkan di akhir baris + simpan file</i> [ Ctrl+X | Y ]  <br/>
 <h4>2. Cek direktori  </h4>
 &nbsp;&nbsp;&nbsp;&nbsp; ls
 
