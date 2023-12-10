@@ -3,20 +3,20 @@
 <h4>1. Instalasi Format File Sistem NTFS ke Linux  </h4>
 &nbsp;&nbsp;&nbsp;&nbsp; apt install ntfs-3g fuse
 <h4>2. Buat direktori di linux </h4>
-&nbsp;&nbsp;&nbsp;&nbsp; mkdir -p usb/data
+&nbsp;&nbsp;&nbsp;&nbsp; mkdir -p data-hardisk
 <h4>3. Cek Perankgat di linux </h4>
 &nbsp;&nbsp;&nbsp;&nbsp; blkid    ### (/dev/sda2)
 <h4>4. Proses Mounting USB-Hardisk di linux </h4>
-&nbsp;&nbsp;&nbsp;&nbsp; mount /dev/sda2 /usb/data   <i>## seusiakan dengan yang terlihat dilangkah sebelumnya</i>
+&nbsp;&nbsp;&nbsp;&nbsp; mount /dev/sda2 data-hardisk   <i>## seusiakan dengan yang terlihat dilangkah sebelumnya</i>
 <h4>5. Pembacaan direktori</h4>
-&nbsp;&nbsp;&nbsp;&nbsp; cd /usb/data<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp; cd data-hardisk<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp; ls
 
 <h2>B. Auto Mounting-Hardisk di Linux - STB B860H</h2>
 --------------------------------------------------------------------------------------------------------------------------------------
 <h4>1. Buat Auto start  </h4>
 &nbsp;&nbsp;&nbsp;&nbsp; nano /etc/fstab <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  UUID="lihat_sesuai_ID_nya_yg_terlihat"  /usb/data   ntfs-3g  defaults,nofail  0 0  <br/> 
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  UUID="lihat_sesuai_ID_nya_yg_terlihat"  data-hardisk   ntfs-3g  defaults,nofail  0 0  <br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>### Tambahkan di akhir baris + simpan file</i> [ Ctrl+X | Y ]  <br/>
 <h4>2. Cek direktori  </h4>
 &nbsp;&nbsp;&nbsp;&nbsp; ls
